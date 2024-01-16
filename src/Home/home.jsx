@@ -12,7 +12,6 @@ const home = () => {
             <HomeMainbar/>
             <RightSidebar/>
         </div>
-      
     </div>
   )
 }

@@ -1,32 +1,33 @@
 import React from 'react'
-import './LeftSidebar.css'
+import "./LeftSidebar.css";
 
 
 const LeftSidebar = () => {
   return (
+    <>
     <div className="left-sidebar">
-      <p className="p-select">
-        <FaQuestion /> QUESTIONS
-      </p>
-      <p>
-        <IoBagOutline /> JOBS
-      </p>
-      <p>
-        <IoDocumentTextOutline /> DOCUMENTATION
-      </p>
-      <p>
-        <GoTag /> TAGS
-      </p>
-      <p>
-        <LuUser2 /> USERS
-      </p>
-      <p>
-        <SlBadge /> BADGES
-      </p>
-      <p>
-        <BsMegaphone /> ASK QUESTION
-      </p>
+      <nav className="side-nav">
+        <button className="nav-btn">
+          <p>Home</p>
+        </button>
+        <div className="side-nav-div">
+          <button className="nav-btn">
+            <p>Public</p>
+          </button>
+          <button className="nav-btn li">
+            <img alt="" />
+            <p > Questions </p>
+          </button>
+          <button className="nav-btn">
+            <p>Tags</p>
+          </button>
+          <button className="nav-btn">
+            <p>Users</p>
+          </button>
+        </div>
+      </nav>
     </div>
+    </>
   );
 }
 
