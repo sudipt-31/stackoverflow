@@ -1,8 +1,13 @@
 import React from "react";
 import {Link} from 'react-router-dom'
-import logo from '../assets/logo.svg'
-import search from '../assets/search.svg'
+
+import search from "../../images/search-solid.svg";
 import './Navbar.css'
+import bars from "../../images/bars-solid.svg";
+import logo from '../../images/logo.png'
+
+
+
 
 
 
@@ -12,29 +17,28 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-        <Link to="/" className="nav-logo">
-          <img
-            src={logo}
-            alt="logo"
-            style={{ width: "100px", height: "100px", marginRight: "10px" }}
-          />
-        </Link>
-        <form action="">
-          <input type="text" placeholder="Search " name="search" />
-          <img src={search} alt=""  className="search-icon"/>
-        </form>
+        <button to="/" className="nav-logo-hem">
+          <img src={bars} alt="logo" style={{ width: 15 }} />
+        </button>
+        <div className="nav-section">
+          <div className="nav-logo">
+            <img src={logo} alt="logo" />
+          </div>
+          <form action="">
+            <input type="text" placeholder="Search " name="Search..." />
+            <img src={search} alt="search" className="search-icon" width='18' />
+          </form>
 
-        <Link to="/" className="nav-item">
-          About
-        </Link>
-        <Link to="/" className="nav-item">
-          Product
-        </Link>
-        <Link to="/" className="nav-item">
-          For Teams
-        </Link>
-
-     
+          <Link to="/" className="nav-item btn">
+            About
+          </Link>
+          <Link to="/" className="nav-item btn">
+            Products
+          </Link>
+          <Link to="/" className="nav-item btn">
+            For Teams
+          </Link>
+        </div>
       </div>
     </nav>
   );

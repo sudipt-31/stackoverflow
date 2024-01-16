@@ -5,7 +5,7 @@ nav{
     border-top: solid 3px orange;
     box-shadow: 0px 1px 5px black;
     position: fixed;
-    z-index: 5;
+    z-index: 15;
     top: 0%;
     left: 0%;
     background-color: #f8f9f9;
@@ -21,13 +21,27 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+.navbar .nav-section{
+    display: flex;
+        align-items: center;
+        flex-grow: 1;
+}
 
-.nav-logo{
+/* .nav-logo{
    padding: 5px 25px;
    height: 10px;
    width: 10px; 
-}
+} */
 
+.nav-logo-hem{
+    display: none;
+        transition: 0.2s;
+        padding: 5px 6px 3px 6px;
+        border-radius: 50%;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+}
 .nav-item{
     margin: 0px 3px;
     font-size: small;
@@ -41,7 +55,7 @@ nav{
     color: black;
 }
 
-.navbar form input{
+.navbar .nav-section form {
     min-width: 90%;
     font-size: 13px;
     border: solid 1px  #0000003a;
