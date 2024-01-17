@@ -16,7 +16,7 @@ const LeftSidebar = () => {
           </button>
           <button className="nav-btn li">
             <img alt="" />
-            <p > Questions </p>
+            <p style={{alignItems:"end"}}> Questions </p>
           </button>
           <button className="nav-btn">
             <p>Tags</p>
