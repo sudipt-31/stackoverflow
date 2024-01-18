@@ -1,22 +1,12 @@
-import { useState } from "react";
-import Navbar from "./components/navbar";
-import { BrowserRouter as Router } from "react-router-dom";
-import LeftSidebar from "./components/LeftSidebar";
-import RightSidebar from "./components/RightSidebar";
+import Navbar from "./componenet/navbar/Navbar.jsx";
+import Index from "./componenet/body/index.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="app">
-      <Router>
-        <Navbar />
-        <div>
-          <LeftSidebar/>
-          <RightSidebar/>
-        </div>
-      </Router>
-    </div>
+    <>
+      <Navbar />
+      <Index />
+    </>
   );
 }
 

@@ -1,0 +1,87 @@
+.leftbar {
+    font-family: sans-serif;
+    display: flex;
+    padding: 20px 0px 10px 70px;
+    height: 100%;
+    flex: 0.5;
+    max-width: 170px;
+}
+
+.leftbar-container {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+
+.leftbar-option {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.leftbar-option {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 5px;
+}
+
+p:hover {
+    border-right: 3px solid rgba(245, 162, 9);
+    color: rgba(245, 162, 9);
+    cursor: pointer;
+    width: 120px;
+}
+
+p:active {
+    border-right: 5px solid rgba(245, 162, 9);
+    color: rgba(245, 162, 9);
+    cursor: pointer;
+}
+
+.MuiSvgIcon-root {
+    margin-right: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 31px;
+    font-size: 13px;
+}
+
+.prfl {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.login-register {
+    margin-left: -50px;
+}
+
+.login {
+    padding: 5px;
+    border: 2px solid rgb(245 139 56);
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.register {
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgb(245 139 56);
+    color: white;
+    text-align: center;
+    width: 150px;
+}
